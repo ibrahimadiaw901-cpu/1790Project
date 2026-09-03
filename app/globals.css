@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #17202a;
+  --muted: #667681;
+  --line: #dbe1e5;
+  --paper: #f4f6f8;
+  --blue: #244e68;
+  --red: #bb4937;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans), sans-serif; line-height: 1.6; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+.font-display { font-family: var(--font-display), Georgia, serif; }
+.eyebrow { font-size: .67rem; font-weight: 800; letter-spacing: .16em; line-height: 1.2; text-transform: uppercase; }
+.side-link { display: flex; width: 100%; align-items: center; gap: 13px; border-radius: 5px; padding: 12px; text-align: left; font-size: 13px; font-weight: 600; color: #687784; transition: background .2s, color .2s; }
+.side-link:hover { background: #eef3f5; color: #244e68; }
+.side-link-active { background: #e8f1f4; color: #244e68; }
+.side-mark { width: 24px; color: #9ba8af; font-family: var(--font-display), Georgia, serif; font-size: 15px; }
+.mobile-nav { white-space: nowrap; border: 1px solid #dbe1e5; border-radius: 999px; padding: 7px 13px; font-size: 12px; font-weight: 700; color: #52636f; }
+.field-label { display: block; margin-bottom: 9px; color: #53646f; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.field-input { width: 100%; border: 1px solid #cfd8de; border-radius: 4px; background: #fff; padding: 13px 14px; color: #17202a; font-size: 14px; outline: none; transition: border-color .2s, box-shadow .2s; }
+.field-input::placeholder { color: #9aa6ad; }
+.field-input:focus { border-color: #244e68; box-shadow: 0 0 0 3px #e8f1f4; }
+.rail-btn { display: inline-flex; align-items: center; border: 1px solid #dbe1e5; border-radius: 999px; background: #fbfcfd; padding: 7px 14px; font-size: 13px; font-weight: 600; color: #52636f; transition: all .2s; }
+.rail-btn:hover { border-color: #244e68; color: #244e68; }
+.rail-btn:disabled { opacity: .6; }
+.rail-btn-active { background: #e8f1f4; border-color: #244e68; color: #244e68; }
+.rail-btn-sign { background: #244e68; border-color: #244e68; color: #fff; }
+.rail-btn-sign:hover { background: #193b50; }
+.rail-btn-sign-active { background: #4e6f59; border-color: #4e6f59; color: #fff; }
